@@ -256,7 +256,7 @@ Criar um tradutor web interativo que:
 
 ## 👨‍💻 Autor
 
-Desenvolvido como solução para o Code Challenge #1 do Stack Overflow.
+Desenvolvido por [Luizfxdev](https://www.linkedin.com/in/luizfxdev) como solução para o Code Challenge #1 do Stack Overflow.
 
 ---
 
