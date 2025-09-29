@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tradutor de Fala de Bebê</title>
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;700&family=Lato:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Vídeo de fundo -->
+    <video autoplay muted loop id="backgroundVideo">
+      <source src="assets/background.mp4" type="video/mp4" />
+    </video>
+
+    <!-- Container principal -->
+    <div class="container">
+      <h1 id="mainTitle">🍼 Tradutor de Fala de Bebê</h1>
+
+      <!-- Seletor de idioma -->
+      <div class="language-selector">
+        <label for="languageSelect" id="langLabel">Selecione o idioma:</label>
+        <select id="languageSelect" class="language-dropdown">
+          <option value="pt">Português</option>
+          <option value="en">English</option>
+        </select>
+      </div>
+
+      <!-- Input para texto -->
+      <div class="input-section">
+        <label for="inputText" id="inputLabel">Digite uma frase:</label>
+        <textarea id="inputText" class="input-field" rows="3" placeholder="Digite seu texto aqui..."></textarea>
+      </div>
+
+      <!-- Seletor de idioma do texto -->
+      <div class="text-language-selector">
+        <label id="textLangLabel">Idioma do texto:</label>
+        <div class="radio-group">
+          <label class="radio-label">
+            <input type="radio" name="textLanguage" value="pt" checked />
+            <span id="radioPt">Português</span>
+          </label>
+          <label class="radio-label">
+            <input type="radio" name="textLanguage" value="en" />
+            <span id="radioEn">Inglês</span>
+          </label>
+        </div>
+      </div>
+
+      <!-- Botões -->
+      <div class="button-container">
+        <button class="custom-btn btn-11" id="translateBtn">
+          <span id="btnTranslate">DECIFRAR</span>
+          <div class="dot"></div>
+        </button>
+        <button class="custom-btn btn-11" id="resetBtn">
+          <span id="btnReset">RETORNAR</span>
+          <div class="dot"></div>
+        </button>
+      </div>
+
+      <!-- Seção de resultado -->
+      <div class="result-section" id="resultSection" style="display: none">
+        <h2 id="resultTitle">📊 Resultado da Tradução</h2>
+        <div class="result-content" id="resultContent"></div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
